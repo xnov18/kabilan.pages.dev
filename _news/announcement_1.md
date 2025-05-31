@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joined the CSE Department at NIT Trichy as a Summer Intern
+Joined the CSE Department at NIT Trichy as a Summer Research Intern
