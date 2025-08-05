@@ -145,6 +145,8 @@ newsletter:
 # -----------------------------------------------------------------------------
 
 collections:
+  posts:
+    output: true
   news:
     defaults:
       layout: post

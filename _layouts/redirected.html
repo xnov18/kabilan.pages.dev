@@ -1,22 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="refresh" content="5;url={{ page.redirect_to }}">
+    <meta http-equiv="refresh" content="0;url={{ page.redirect_to }}">
     <link rel="canonical" href="{{ page.redirect_to }}">
-    <title>Redirecting to CV PDF</title>
 </head>
 <body>
-    <p>Redirecting to <a href="{{ page.redirect_to }}" target="_blank" rel="noopener">CV PDF</a>...</p>
-    <p>If you are not redirected automatically, click the link above to open the CV PDF in a new tab.</p>
-    <script>
-        // Try opening in a new tab
-        var newTab = window.open('{{ page.redirect_to }}', '_blank', 'noopener');
-        if (!newTab || newTab.closed || typeof newTab.closed == 'undefined') {
-            // Popup blocked, fallback to redirect in current tab after a short delay
-            setTimeout(function() {
-                window.location.href = '{{ page.redirect_to }}';
-            }, 1000);
-        }
-    </script>
+    <p>Redirecting to <a href="{{ page.redirect_to }}">CV PDF</a>...</p>
+    <script>location='{{ page.redirect_to }}'</script>
 </body>
 </html>

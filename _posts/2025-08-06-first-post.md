@@ -5,3 +5,4 @@ date: 2025-08-06 00:00:00
 description: Testing out what my blog could look like!
 ---
 
+Hi!
