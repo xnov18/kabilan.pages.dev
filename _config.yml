@@ -145,8 +145,6 @@ newsletter:
 # -----------------------------------------------------------------------------
 
 collections:
-  posts:
-    output: true
   news:
     defaults:
       layout: post
@@ -247,9 +245,10 @@ terser:
 
 jekyll-archives:
   posts:
-    enabled: [year] # enables year, tag and category archives (remove if you need to disable one of them).
+    enabled: [year, tags] # enables year, tag and category archives (remove if you need to disable one of them).
     permalinks:
       year: "/blog/:year/"
+      tags: "/blog/:type/:name/"
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
